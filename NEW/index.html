@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DevPilot AI | Secure Enterprise Copilot</title>
+    <meta
+      name="description"
+      content="DevPilot AI is a secure, permission-aware enterprise copilot for delivery, engineering, documentation, and operational reporting."
+    >
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="/ai" aria-label="DevPilot AI home">
+        <span class="brand-mark" aria-hidden="true">DP</span>
+        <span>DevPilot AI</span>
+      </a>
+      <nav class="site-nav" aria-label="Page sections">
+        <a href="#planning">Planning</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#control">Control</a>
+        <a href="#prompts">Prompts</a>
+      </nav>
+      <a class="nav-cta" href="#demo">Request Demo</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">DEV_PILOT_AI</p>
+          <h1 id="hero-title">AI that understands delivery work &mdash; without bypassing control.</h1>
+          <p class="hero-subhead">
+            DevPilot AI helps teams plan, prioritize, summarize, investigate, and report using the work,
+            code, documents, and data they are already allowed to access.
+          </p>
+          <div class="hero-actions" aria-label="DevPilot AI actions">
+            <a class="button button-primary" href="#planning">Explore DevPilot AI</a>
+            <a class="button button-secondary" href="#demo">Request Demo</a>
+          </div>
+        </div>
+
+        <div class="ai-console" aria-label="DevPilot AI command-console interface">
+          <div class="console-bar">
+            <div class="window-controls" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span class="console-title">Command Console</span>
+            <span class="permission-pill" id="permissionStatus">Permission verified</span>
+          </div>
+
+          <div class="console-body">
+            <div class="prompt-panel">
+              <label for="aiPrompt">Prompt input</label>
+              <div class="prompt-input-row">
+                <input
+                  id="aiPrompt"
+                  type="text"
+                  value="Why is the Payments API release delayed?"
+                  readonly
+                >
+                <button class="console-button" type="button" id="askButton">Ask</button>
+              </div>
+            </div>
+
+            <div class="suggested-prompts" aria-label="Suggested prompts">
+              <p>Suggested prompts</p>
+              <div class="prompt-chip-row">
+                <button type="button" data-prompt="payments">Payments delay</button>
+                <button type="button" data-prompt="sprint">Sprint summary</button>
+                <button type="button" data-prompt="deployment">Deployment failure</button>
+                <button type="button" data-prompt="capacity">Capacity risk</button>
+              </div>
+            </div>
+
+            <section class="answer-panel" aria-labelledby="answerTitle">
+              <div class="answer-heading">
+                <h2 id="answerTitle">AI answer panel</h2>
+                <span id="auditNotice">Audit logging enabled</span>
+              </div>
+              <p class="answer-text" id="answerText">
+                Release 3.8.0 is delayed by two blocked backend tasks, one failed regression test,
+                and a pending security approval.
+              </p>
+              <div class="source-block">
+                <p>Source references</p>
+                <ul id="sourceList">
+                  <li><span>Task</span> PAY-4421 Backend reconciliation blocker</li>
+                  <li><span>Project</span> Payments API Release 3.8.0</li>
+                  <li><span>Document</span> Security approval checklist</li>
+                  <li><span>Pull request</span> PR #1847 Regression suite update</li>
+                </ul>
+              </div>
+            </section>
+
+            <div class="console-notices" aria-label="Console controls">
+              <div>
+                <span>Permission indicator</span>
+                <strong>Allowed sources only</strong>
+              </div>
+              <div>
+                <span>Audit logging notice</span>
+                <strong>Request, citations, and response retained</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="capability-section section-planning" id="planning" aria-labelledby="planning-title">
+        <div class="section-heading">
+          <p class="section-kicker">01 AI for planning</p>
+          <h2 id="planning-title">Turn a project brief into a delivery plan.</h2>
+        </div>
+        <ul class="capability-grid">
+          <li>Generate project plans</li>
+          <li>Break requirements into epics</li>
+          <li>Generate features and tasks</li>
+          <li>Create subtasks</li>
+          <li>Generate acceptance criteria</li>
+          <li>Suggest milestones</li>
+          <li>Estimate story points</li>
+          <li>Identify missing dependencies</li>
+          <li>Suggest staffing needs</li>
+        </ul>
+      </section>
+
+      <section class="capability-section section-execution" id="execution" aria-labelledby="execution-title">
+        <div class="section-heading">
+          <p class="section-kicker">02 AI for daily execution</p>
+          <h2 id="execution-title">Help every employee focus on the right work.</h2>
+        </div>
+        <ul class="capability-grid">
+          <li>Prioritize tasks</li>
+          <li>Create daily stand-up summaries</li>
+          <li>Explain blockers</li>
+          <li>Detect deadline conflicts</li>
+          <li>Summarize task comments</li>
+          <li>Recommend next action</li>
+          <li>Detect workload overload</li>
+          <li>Suggest reassignment</li>
+        </ul>
+      </section>
+
+      <section class="capability-section section-engineering" id="engineering" aria-labelledby="engineering-title">
+        <div class="section-heading">
+          <p class="section-kicker">03 AI for engineering</p>
+          <h2 id="engineering-title">Make technical activity visible beyond code.</h2>
+        </div>
+        <ul class="capability-grid">
+          <li>Summarize pull requests</li>
+          <li>Explain code changes in plain language</li>
+          <li>Suggest reviewers</li>
+          <li>Summarize CI/CD failures</li>
+          <li>Detect risky deployments</li>
+          <li>Generate release notes</li>
+          <li>Explain deployment failures</li>
+          <li>Link code changes to project work</li>
+        </ul>
+      </section>
+
+      <section class="capability-section section-docs" id="documentation" aria-labelledby="documentation-title">
+        <div class="section-heading">
+          <p class="section-kicker">04 AI for documentation</p>
+          <h2 id="documentation-title">Ask questions across the knowledge your team already owns.</h2>
+        </div>
+        <ul class="capability-grid">
+          <li>Summarize documents</li>
+          <li>Extract action items</li>
+          <li>Convert meeting notes into tasks</li>
+          <li>Generate PRDs</li>
+          <li>Generate technical design drafts</li>
+          <li>Generate API documentation drafts</li>
+          <li>Find outdated documents</li>
+          <li>Generate onboarding guides</li>
+        </ul>
+      </section>
+
+      <section class="capability-section section-leadership" id="leadership" aria-labelledby="leadership-title">
+        <div class="section-heading">
+          <p class="section-kicker">05 AI for leadership</p>
+          <h2 id="leadership-title">Get clear answers without chasing status updates.</h2>
+        </div>
+        <ul class="capability-grid">
+          <li>Project risk summaries</li>
+          <li>Delivery forecasts</li>
+          <li>Sprint summaries</li>
+          <li>Executive reports</li>
+          <li>Team capacity analysis</li>
+          <li>Bottleneck detection</li>
+          <li>Client status reports</li>
+          <li>Incident summaries</li>
+        </ul>
+      </section>
+
+      <section class="control-section" id="control" aria-labelledby="control-title">
+        <div class="section-heading">
+          <p class="section-kicker">06 AI control model</p>
+          <h2 id="control-title">AI with enterprise guardrails.</h2>
+        </div>
+
+        <ol class="control-flow" aria-label="AI control system flow">
+          <li>User Request</li>
+          <li>Permission Check</li>
+          <li>Data Classification Check</li>
+          <li>Approved Sources</li>
+          <li>AI Response</li>
+          <li>Source Citations</li>
+          <li>Audit Log</li>
+        </ol>
+
+        <div class="rules-panel">
+          <h3>Security rules</h3>
+          <ul class="rules-grid">
+            <li>AI only accesses content the user can already access</li>
+            <li>Restricted data is protected</li>
+            <li>AI outputs include source references</li>
+            <li>AI use is logged</li>
+            <li>AI cannot auto-deploy production code</li>
+            <li>AI cannot auto-approve security or release gates</li>
+            <li>AI-generated assignments need human approval</li>
+            <li>AI cannot make hiring, firing, promotion, or salary decisions</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="prompt-section" id="prompts" aria-labelledby="prompts-title">
+        <div class="section-heading">
+          <p class="section-kicker">07 Suggested prompts</p>
+          <h2 id="prompts-title">Start with the questions delivery teams already ask.</h2>
+        </div>
+        <div class="prompt-grid">
+          <button type="button">&ldquo;Which projects are at risk this week?&rdquo;</button>
+          <button type="button">&ldquo;Summarize Sprint 14.&rdquo;</button>
+          <button type="button">&ldquo;Show blocked work in Payments Platform.&rdquo;</button>
+          <button type="button">&ldquo;Create subtasks for two-factor authentication.&rdquo;</button>
+          <button type="button">&ldquo;Why did deployment 3.8.0 fail?&rdquo;</button>
+          <button type="button">&ldquo;Generate a weekly executive update.&rdquo;</button>
+          <button type="button">&ldquo;Find documentation related to refund validation.&rdquo;</button>
+          <button type="button">&ldquo;Which engineers are above planned capacity?&rdquo;</button>
+        </div>
+      </section>
+
+      <section class="final-cta" id="demo" aria-labelledby="demo-title">
+        <div>
+          <p class="section-kicker">08 DevPilot AI</p>
+          <h2 id="demo-title">Move faster with AI. Keep control with your team.</h2>
+        </div>
+        <div class="final-actions">
+          <a class="button button-primary" href="mailto:sales@devpilot.ai?subject=Request%20DevPilot%20AI%20Demo">Request Demo</a>
+          <a class="button button-secondary" href="mailto:ai-specialist@devpilot.ai?subject=Talk%20to%20an%20AI%20Specialist">Talk to an AI Specialist</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

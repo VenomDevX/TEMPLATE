@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output and caches
+dist/
+build/
+.vite/
+.turbo/
+.next/
+*.tsbuildinfo
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.local.example
+*.pem
+*.key
+id_rsa
+id_dsa
+id_ed25519
+.npmrc
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Agent/private workspace metadata
+.agents/
+.claude/

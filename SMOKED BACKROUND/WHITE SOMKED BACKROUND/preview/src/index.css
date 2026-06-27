@@ -1,0 +1,69 @@
+﻿*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background: #f8f9fa;
+}
+
+body {
+  overflow: hidden;
+}
+
+.preview-stage {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #f8f9fa;
+  isolation: isolate;
+}
+
+.preview-stage .smooth-light-theme-background {
+  position: absolute;
+  z-index: 0;
+  min-height: 100%;
+}
+
+.page-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 8;
+  margin: 0;
+  color: #000;
+  font: 600 clamp(18px, 3vw, 42px)/1.08 "Bahnschrift", "Aptos Display", "Segoe UI Variable Display", "Segoe UI", sans-serif;
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), 0 10px 34px rgba(80, 88, 104, 0.22);
+  transform: translate(-50%, -50%);
+}
+
+.copyright-tag {
+  position: absolute;
+  bottom: 1.8%;
+  left: 1.5%;
+  z-index: 12;
+  color: #000;
+  font: 400 clamp(9px, 0.86vw, 13px)/1 "Share Tech Mono", "Lucida Console", Monaco, monospace;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 160ms ease, text-shadow 160ms ease;
+}
+
+.copyright-tag:hover,
+.copyright-tag:focus-visible {
+  color: #000;
+  text-shadow: 0 0 8px rgba(18, 20, 24, 0.18);
+  outline: none;
+}
+

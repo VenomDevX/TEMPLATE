@@ -1,0 +1,16 @@
+﻿export {
+  LIGHT_BACKGROUND_BASE_CLASS,
+  LIGHT_BACKGROUND_ROOT_CLASS,
+  LIGHT_HERO_READABILITY_OVERLAY_STYLE,
+  LIGHT_PARTICLE_CANVAS_CLASS,
+  LIGHT_RADIAL_SOFT_CENTER_CLASS,
+  LIGHT_STACK_SECTION_BACKGROUND_CLASS,
+  LIGHT_STICKY_SECTION_BACKGROUND_CLASS,
+  LightAuroraField,
+  LightHeroReadabilityOverlay,
+  LightParticleBackground,
+  LightSmokeBackground,
+  default,
+  default as SmoothLightThemeBackground,
+  type SmoothLightThemeBackgroundProps,
+} from './SmokeBackground';

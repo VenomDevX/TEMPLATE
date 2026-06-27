@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "react": ["./preview/node_modules/@types/react"],
+      "react/*": ["./preview/node_modules/@types/react/*"],
+      "react-dom": ["./preview/node_modules/@types/react-dom"],
+      "react-dom/*": ["./preview/node_modules/@types/react-dom/*"],
+      "framer-motion": ["./preview/node_modules/framer-motion"]
+    },
+    "typeRoots": ["preview/node_modules/@types"]
+  },
+  "include": ["TextReveal.tsx", "global.d.ts", "preview/src"]
+}

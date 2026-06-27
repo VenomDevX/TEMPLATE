@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "ESNext",
+    "ignoreDeprecations": "6.0",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "react": ["./preview/node_modules/@types/react/index.d.ts"],
+      "react/jsx-runtime": ["./preview/node_modules/@types/react/jsx-runtime.d.ts"]
+    },
+    "typeRoots": ["./preview/node_modules/@types"],
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "include": ["SmokeBackground.tsx", "index.ts"]
+}

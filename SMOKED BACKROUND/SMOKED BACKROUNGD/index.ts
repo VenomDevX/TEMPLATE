@@ -1,0 +1,16 @@
+export {
+  DARK_BACKGROUND_BASE_CLASS,
+  DARK_BACKGROUND_ROOT_CLASS,
+  DARK_HERO_READABILITY_OVERLAY_STYLE,
+  DARK_PARTICLE_CANVAS_CLASS,
+  DARK_RADIAL_SOFT_CENTER_CLASS,
+  DARK_STACK_SECTION_BACKGROUND_CLASS,
+  DARK_STICKY_SECTION_BACKGROUND_CLASS,
+  DarkAuroraField,
+  DarkHeroReadabilityOverlay,
+  DarkParticleBackground,
+  DarkSmokeBackground,
+  default,
+  default as SmoothDarkThemeBackground,
+  type SmoothDarkThemeBackgroundProps,
+} from './SmokeBackground';
